@@ -1,0 +1,137 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('./bg.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  outline: none;
+  margin: 0;
+}
+
+button.add-task {
+  background-color: #6a5acd;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  margin: 0;
+}
+
+button.add-task:hover {
+  background-color: #5b4ac4;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px; /* Added space between todo items and clear-all button */
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #dededeea;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+strong {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+button.delete-task {
+  background: none;
+  border: none;
+  color: #ff4500;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+button.delete-task:hover {
+  color: #e63900;
+}
+
+p {
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  display: inline-block;
+  margin-right: 10px; /* Added space between p tag and Clear All button */
+}
+
+.clear-all {
+  background-color: #6a5acd;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 6;
+}
+
+.clear-all:hover {
+  background-color: #5b4ac4;
+}
+
+.container {
+  background-color: white;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 100px; /* Adjusted minimum height */
+}
+
+.loader {
+  font-size: 18px;
+  color: #6a5acd;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Hide the delete icon by default */
+button.delete-task {
+  display: none;
+}
+
+/* Show the delete icon only when hovering over the list item */
+li:hover button.delete-task {
+  display: flex;
+}
