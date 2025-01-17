@@ -11,7 +11,7 @@ import { MdDeleteOutline } from "react-icons/md";
 function App() {
   const [tasks, setTasks] = useState([]);
   const [title, setTitle] = useState("");
-  const [loading, setLoading] = useState(false); // Loading state
+  const [loading, setLoading] = useState(false); 
 
   useEffect(() => {
     fetchTasks();
@@ -66,7 +66,7 @@ function App() {
         </button>
       </div>
       {loading ? (
-        <div className="loader">Loading...</div> // Loader display
+        <div className="loader">Loading...</div>
       ) : (
         <>
           <ul>
@@ -80,12 +80,12 @@ function App() {
                   {/* <MdDeleteOutline style={{ fontSize: "34px", color: "#ff4500" }} /> */}
                   <MdDeleteOutline
                     style={{
-                      fontSize: "24px", // Adjust the size
-                      color: "#FFFFFF", // Set the icon color to white
-                      backgroundColor: "#ff4500", // Add the red background color
-                      borderRadius: "8px", // Add rounded corners
-                      padding: "8px", // Add padding for spacing
-                      display: "inline-block", // Ensure proper alignment
+                      fontSize: "24px", 
+                      color: "#FFFFFF", 
+                      backgroundColor: "#ff4500", 
+                      borderRadius: "8px", 
+                      padding: "8px", 
+                      display: "inline-block", 
                     }}
                   />
                 </button>
